@@ -19,6 +19,7 @@ public class Robot extends TimedRobot {
   private Timer timer;
   @Override
   public void robotInit() {
+    CameraServer.getInstance().startAutomaticCapture("back",2);
     CameraServer.getInstance().startAutomaticCapture("front",1);
     CameraServer.getInstance().startAutomaticCapture("ground",0);
     Chassis.Init();
@@ -27,7 +28,7 @@ public class Robot extends TimedRobot {
     Ramp.Init();
     com = new Compressor();
     timer = new Timer();
-    // NavxGyro.Init();
+   
 
   }
 
@@ -37,7 +38,7 @@ public class Robot extends TimedRobot {
     Panel.autoInit();
     timer.reset();
     timer.start();
-    // NavxGyro.resetRoll();
+  
   
   }
 
