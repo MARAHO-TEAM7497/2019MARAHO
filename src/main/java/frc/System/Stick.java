@@ -17,7 +17,6 @@ public class Stick{
         a = stick.getRawButtonPressed(1);
         b = stick.getRawButtonPressed(2);
         x = stick.getRawButtonPressed(3);
-        y = stick.getRawButton(4);            
         lb = stick.getRawButtonPressed(5);
         lb_Released = stick.getRawButtonReleased(5);     
         rb = stick.getRawButtonPressed(6);
