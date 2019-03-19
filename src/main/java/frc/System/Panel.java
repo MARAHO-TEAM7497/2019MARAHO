@@ -16,16 +16,16 @@ public class Panel{
     private static byte state = 0,restore=0,count;
 
     private static byte Y_Ramp_Encoder=2,B_Ramp_Encoder=3;
-    //Panel 馬達的ID
+    //The ID of Panel Motor
     private static final byte Port_PanelMotor = 5;
     private static VictorSPX PanelMotor;
-    //Panel 氣壓的東西
+    //Panel Solenoid
     private static Solenoid left,right;
     private static final byte Port_LeftSolenoid = 0,Port_RightSolenoid=1;
     private static Encoder RampCoder;
     private static double value,lastvalue,rate;
-    //初始化
-
+    
+    //Initialize
     public static void Init(){
         
         RampCoder = new Encoder(Y_Ramp_Encoder,B_Ramp_Encoder,true);
