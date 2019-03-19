@@ -44,7 +44,6 @@ public class Panel{
         
         restore=0;
         state = 0;
-        restore = 0;
         count=0;
 
         back = true;
