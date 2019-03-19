@@ -34,7 +34,7 @@ public class Robot extends TimedRobot {
 
   @Override
   public void autonomousInit() {
-    
+    Chassis.PeriodicInit();
     Panel.autoInit();
     timer.reset();
     timer.start();
